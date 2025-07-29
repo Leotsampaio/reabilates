@@ -3,6 +3,7 @@ import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "./_components/navbar";
+import Footer from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "Reabilates",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body>
         <Navbar/>
         <TRPCReactProvider>{children}</TRPCReactProvider>
+        <Footer/>
       </body>
     </html>
   );
