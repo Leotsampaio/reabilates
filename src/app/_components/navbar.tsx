@@ -76,28 +76,28 @@ export default function Navbar(){
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] bg-white">
-                <div className="flex flex-col space-y-6 mt-8">
+                <div className="flex flex-col px-5 items-center space-y-6 mt-8">
                   <Button
                     onClick={() => scrollToSection("sobre")}
-                    className="text-gray-700 hover:text-pink-600 transition-colors"
+                    className="text-pink-500 bg-white border-pink-400 hover:text-white w-2/3 justify-center flex hover:bg-pink-600 transition-colors"
                   >
                     Sobre
                   </Button>
                   <Button
                     onClick={() => scrollToSection("serviços")}
-                    className="text-gray-700 hover:text-custom-pink-600 transition-colors"
+                    className="text-pink-500 bg-white border-pink-400 hover:text-white w-2/3 justify-center flex hover:bg-pink-600 transition-colors"
                   >
                     Serviços
                   </Button>
                   <Button
                     onClick={() => scrollToSection("localização")}
-                    className="text-gray-700 hover:text-custom-pink-600 transition-colors"
+                    className="text-pink-500 bg-white border-pink-400 hover:text-white w-2/3 justify-center flex hover:bg-pink-600 transition-colors"
                   >
                     Localização
                   </Button>
                   <Button
                     onClick={() => scrollToSection("contato")}
-                    className="hover:bg-pink-700 bg-pink-600 text-white"
+                    className="hover:bg-pink-700 w-2/3 bg-pink-600 text-white"
                   >
                     Marcar Consulta
                   </Button>

@@ -1,10 +1,17 @@
-import Link from "next/link"
+"use client"
 import Image from "next/image"
 import { Star} from "lucide-react"
 
 
 //todo: foto do local para colocar
 export default function HeroSection(){
+
+    const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
     return(
         <section id="herosection" className="pt-20 pb-16 px-4 bg-pink-100">
                 <div className="container mx-auto">
@@ -20,18 +27,18 @@ export default function HeroSection(){
                         experiência dedicados ao seu bem-estar.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4">
-                        <Link
-                          href={"/contato"}
+                        <button
+                          onClick={() => scrollToSection("contato")}
                           className="bg-pink-600 hover:bg-pink-500 text-white hover:scale-105 hover:transition-all text-lg px-8 py-3 border rounded-xl"
                         >
                           Marcar Consulta
-                        </Link>
-                        <Link
-                          href={"/serviços"}
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("serviços")}
                           className="border-pink-300 border-2 hover:scale-105 hover:transition-all rounded-xl text-pink-600 hover:bg-pink-100 text-lg px-8 py-3"
                         >
                           Nossos Serviços
-                        </Link>
+                        </button>
                       </div>
                     </div>
                     <div className="relative">
